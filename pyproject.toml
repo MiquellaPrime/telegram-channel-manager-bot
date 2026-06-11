@@ -9,3 +9,27 @@ dev = [
     "pre-commit>=4.6.0",
     "ruff>=0.15.16",
 ]
+
+[tool.ruff]
+line-length = 88
+indent-width = 4
+
+[tool.ruff.lint]
+select = [
+    "E",
+    "F",
+    "UP",
+    "I",
+    "SIM",
+    "B",
+    "C4",
+    "RUF",
+    "N",
+]
+ignore = [
+    "E501",
+]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
